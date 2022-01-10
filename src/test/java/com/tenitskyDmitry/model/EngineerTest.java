@@ -7,11 +7,11 @@ import static org.junit.Assert.*;
 
 public class EngineerTest {
 
-    @Before
-    public void setUp() throws Exception {
-    }
+    Engineer engineer;
 
     @Test
     public void getSalary() {
+        engineer = new Engineer(30000, 20000);
+        assertEquals(50000, engineer.getSalary());
     }
 }
